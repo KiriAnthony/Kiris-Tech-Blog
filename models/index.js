@@ -3,7 +3,7 @@ const Post = require('./Post');
 const User = require('./User');
 
 // User has many Posts
-User.hasMany(Posts, {
+User.hasMany(Post, {
     foreignKey: 'user_id'
 });
 
